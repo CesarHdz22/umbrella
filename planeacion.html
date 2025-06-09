@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Umbrella Corporation - Planeación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Ejemplo básico para que el dropdown funcione */
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ccc;
+            display: none;
+            flex-direction: column;
+            min-width: 150px;
+            z-index: 10;
+        }
+        .dropdown-menu.show {
+            display: flex;
+        }
+        .dropdown-menu a {
+            padding: 8px 12px;
+            text-decoration: none;
+            color: black;
+            white-space: nowrap;
+        }
+        .dropdown-menu a:hover {
+            background-color: #eee;
+        }
+
+        /* Animaciones de ejemplo */
+        .slide-in-left {
+            animation: slideInLeft 1s forwards;
+        }
+        .slide-in-right {
+            animation: slideInRight 1s forwards;
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Umbrella Corporation Logo" />
+            <h1>Umbrella Corporation</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes somos</a>
+
+            <div class="dropdown">
+                <a href="#" id="toggleProceso" class="dropdown-toggle">Nuestro Proceso ▼</a>
+                <div id="menuProceso" class="dropdown-menu">
+                    <a href="planeacion.html">Planeación</a>
+                    <a href="organizacion.html">Organización</a>
+                </div>
+            </div>
+
+            <a href="proyectos.html" class="active">Proyectos</a>
+            <a href="investigacion.html">Investigación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="humanos animate-section" data-anim="left">
+            <div class="container mx-auto">
+                <h3>Recursos Humanos</h3>
+                <div style="text-align:center;">
+                    <img src="img/Umbrella Corps..png" style="width: 759px; left: 1px" alt="Organigrama Umbrella"
+                        class="max-w-full h-auto rounded-lg shadow-lg" />
+                </div>
+            </div>
+        </section>
+
+        <section class="financieros animate-section" data-anim="right">
+            <div class="text">
+                <h3>Financieros</h3>
+            </div>
+            <div class="card-container">
+                <div class="mini-card">
+                    <h3>Desarrollo web</h3>
+                    <p>Frontend y Backend</p>
+                    <p><strong>$15,000 USD</strong> (una sola vez)</p>
+                </div>
+                <!-- Resto de mini-cards igual -->
+                <div class="mini-card">
+                    <h3>Hosting y Dominio</h3>
+                    <p>Renovación anual</p>
+                    <p><strong>$500 USD</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Diseño gráfico y branding</h3>
+                    <p>Diseño visual e identidad</p>
+                    <p><strong>$3,000 USD</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Marketing digital y SEO</h3>
+                    <p>Publicidad y posicionamiento</p>
+                    <p><strong>$2,000 USD/mes</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Mantenimiento y actualizaciones</h3>
+                    <p>Soporte técnico continuo</p>
+                    <p><strong>$1,000 USD/mes</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Seguridad informática</h3>
+                    <p>Protección contra amenazas</p>
+                    <p><strong>$1,500 USD/mes</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Capacitación y soporte</h3>
+                    <p>Entrenamiento al personal</p>
+                    <p><strong>$800 USD/mes</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Total Inicial</h3>
+                    <p>Costos únicos iniciales</p>
+                    <p><strong>$20,500 USD</strong></p>
+                </div>
+                <div class="mini-card">
+                    <h3>Total Mensual</h3>
+                    <p>Costos mensuales estimados</p>
+                    <p><strong>$5,300 USD</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="materiales animate-section" data-anim="left">
+            <div class="content">
+                <div class="text">
+                    <h3>Recursos Materiales</h3>
+                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
+                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
+                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
+                        alt="Futuro tecnológico" />
+                </div>
+            </div>
+        </section>
+
+        <section class="tecnologicos animate-section" data-anim="right">
+            <div class="content">
+                <div class="text">
+                    <h3>Recursos Tecnológicos</h3>
+                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
+                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
+                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
+                        alt="Futuro tecnológico" />
+                </div>
+            </div>
+        </section>
+
+        <section class="informacion animate-section" data-anim="left">
+            <div class="content">
+                <div class="text">
+                    <h3>Recursos Información</h3>
+                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
+                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
+                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
+                        alt="Futuro tecnológico" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Umbrella Corporation - Raccoon City, Sector 12B</p>
+    </footer>
+
+    <script>
+        // Control menú desplegable Nuestro Proceso
+        document.getElementById("toggleProceso").addEventListener("click", function (e) {
+            e.preventDefault();
+            const menu = document.getElementById("menuProceso");
+            menu.classList.toggle("show");
+        });
+
+        // IntersectionObserver para animaciones
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const direction = el.dataset.anim === "right" ? "slide-in-right" : "slide-in-left";
+                    el.classList.add(direction);
+                    observer.unobserve(el); // Solo animar una vez
+                }
+            });
+        }, {
+            root: null, // Ventana, no contenedor
+            threshold: 0.5
+        });
+
+        document.querySelectorAll('.animate-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+
+</html>
