@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Umbrella Corporation</title>
+  <link rel="icon" href="img/logoSF.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Umbrella Logo">
+      <h1>Umbrella Corp</h1>
+    </div>
+    <nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="about.html">Quiénes somos</a></li>
+    <li><a href="projects.html">Proyectos</a></li>
+    <li><a href="research.html">Investigación</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+</nav>
+
+
+  </header>
+
+  <section class="hero">
+    <h2>Umbrella mas alla de la cura</h2>
+    <a href="projects.html"><button>Conoce nuestros proyectos</button></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Umbrella Corporation - Raccoon City, Sector 12B</p>
+    <p>Umbrella Corporation no se responsabiliza por eventos biológicos no autorizados.</p>
+  </footer>
+</body>
+</html>
