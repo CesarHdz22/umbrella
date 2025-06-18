@@ -7,68 +7,7 @@
     <title>Umbrella Corporation - Planeación</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-        /* Ejemplo básico para que el dropdown funcione */
-        nav {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            border: 1px solid #ccc;
-            display: none;
-            flex-direction: column;
-            min-width: 150px;
-            z-index: 10;
-        }
-        .dropdown-menu.show {
-            display: flex;
-        }
-        .dropdown-menu a {
-            padding: 8px 12px;
-            text-decoration: none;
-            color: black;
-            white-space: nowrap;
-        }
-        .dropdown-menu a:hover {
-            background-color: #eee;
-        }
-
-        /* Animaciones de ejemplo */
-        .slide-in-left {
-            animation: slideInLeft 1s forwards;
-        }
-        .slide-in-right {
-            animation: slideInRight 1s forwards;
-        }
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -83,7 +22,7 @@
             <a href="quienes_somos.html">Quiénes somos</a>
 
             <div class="dropdown">
-                <a href="#" id="toggleProceso" class="dropdown-toggle">Nuestro Proceso ▼</a>
+                <a href="#" id="toggleProceso" class="dropdown-toggle">Nuestro Proceso</a>
                 <div id="menuProceso" class="dropdown-menu">
                     <a href="planeacion.html">Planeación</a>
                     <a href="organizacion.html">Organización</a>
@@ -162,49 +101,75 @@
         </section>
 
         <section class="materiales animate-section" data-anim="left">
-            <div class="content">
-                <div class="text">
-                    <h3>Recursos Materiales</h3>
-                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
-                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
-                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
-                </div>
-                <div class="image">
-                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
-                        alt="Futuro tecnológico" />
-                </div>
-            </div>
-        </section>
+    <div class="content">
+        <div class="text">
+            <h3>Recursos Materiales</h3>
+            <p><strong>Tipo de edificio:</strong> Instalación subterránea reforzada, hasta 10 niveles bajo tierra.</p>
+            <p><strong>Mobiliario estándar:</strong></p>
+            <ul>
+                <li>Puestos blindados con monitoreo biométrico.</li>
+                <li>Mesas de acero inoxidable en laboratorios.</li>
+                <li>Cápsulas de contención con aislamiento químico.</li>
+                <li>Cámaras de presión negativa en zonas BOW.</li>
+                <li>Salas de reuniones con paneles insonorizados y proyectores holográficos.</li>
+            </ul>
+            <p><strong>Sistemas de respaldo:</strong></p>
+            <ul>
+                <li>Plantas eléctricas subterráneas independientes.</li>
+                <li>Conductos de ventilación con filtros víricos.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="" alt="Instalación subterránea reforzada" />
+        </div>
+    </div>
+</section>
 
-        <section class="tecnologicos animate-section" data-anim="right">
-            <div class="content">
-                <div class="text">
-                    <h3>Recursos Tecnológicos</h3>
-                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
-                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
-                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
-                </div>
-                <div class="image">
-                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
-                        alt="Futuro tecnológico" />
-                </div>
-            </div>
-        </section>
+<section class="tecnologicos animate-section" data-anim="right">
+    <div class="content">
+        <div class="text">
+            <h3>Recursos Tecnológicos</h3>
+            <p><strong>Hardware:</strong></p>
+            <ul>
+                <li>Terminales blindadas Umbra-6 con doble autenticación biométrica.</li>
+                <li>Pantallas holográficas interactivas.</li>
+                <li>Cámaras con IA para reconocimiento facial.</li>
+                <li>Servidores refrigerados por líquido en bóvedas internas.</li>
+            </ul>
+            <p><strong>Software:</strong></p>
+            <ul>
+                <li>UmbOS: Sistema operativo corporativo.</li>
+                <li>UmbRIS: Plataforma para análisis de muestras virales.</li>
+                <li>UmbAegis: Inteligencia Artificial que supervisa todo (accesos, alarmas, aislamiento).</li>
+                <li>UmbNet: Red interna cifrada sin conexión externa.</li>
+                <li>UmbSim: Simulador táctico de entornos biológicos hostiles.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="" alt="Tecnología avanzada de Umbrella Corporation" />
+        </div>
+    </div>
+</section>
 
-        <section class="informacion animate-section" data-anim="left">
-            <div class="content">
-                <div class="text">
-                    <h3>Recursos Información</h3>
-                    <p>Ser la empresa líder mundial en biotecnología y defensa biosanitaria, reconocida por transformar
-                        la salud, la seguridad y la evolución humana mediante descubrimientos revolucionarios,
-                        conectando ciencia y sociedad para construir un futuro más resiliente.</p>
-                </div>
-                <div class="image">
-                    <img src="https://cdn.glitch.global/a93d948c-3c0b-42eb-839f-ebbf74049a0c/Biotecnologia-vegetal.png?v=1749420956987"
-                        alt="Futuro tecnológico" />
-                </div>
-            </div>
-        </section>
+<section class="informacion animate-section" data-anim="left">
+    <div class="content">
+        <div class="text">
+            <h3>Recursos de Información</h3>
+            <p><strong>Correo corporativo cifrado:</strong> direcciones tipo [usuario]@umbcorp.sec</p>
+            <p><strong>Plataforma interna:</strong> UmbCom para mensajes instantáneos y videollamadas.</p>
+            <p><strong>Protocolos de comunicación:</strong></p>
+            <ul>
+                <li>Transmisión solo dentro de red cerrada.</li>
+                <li>Comunicación entre áreas únicamente con autorización del supervisor de seguridad.</li>
+                <li>Uso de tablets de conexión única con autodestrucción remota en caso de fuga de datos.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="" alt="Seguridad informativa de Umbrella" />
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer>
