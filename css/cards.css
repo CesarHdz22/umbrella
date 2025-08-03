@@ -57,6 +57,17 @@ section {
     color: #eee;
 }
 
+.about .text {
+  max-width: 600px;
+}
+
+.about .text.left {
+  text-align: left;
+}
+
+.about .text.right {
+  text-align: right;
+}
 
 
 .text-center h3 {

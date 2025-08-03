@@ -6,27 +6,70 @@
     <link rel="stylesheet" href="css/style.css">    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logoSF.png" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="cards.css">
 
 </head>
 <body>
-    <header>
+     <header>
+       
         <div class="logo">
-            <img src="img/logo.png" alt="Umbrella Corporation Logo">
+          <img src="img/logo.png" alt="Umbrella Corporation Logo" />
+          <a href="index.html">
             <h1>Umbrella Corporation</h1>
+        </a>
         </div>
         <nav>
-            <a href="index.html">Inicio</a>
             <a href="quienes_somos.html">Quiénes somos</a>
 
             <div class="dropdown">
                 <a href="#" class="dropdown-toggle">Nuestro Proceso</a>
-                <div class="dropdown-menu">
-                    <a href="planeacion.html">Planeación</a>
-                    <a href="organizacion.html">Organización</a>
-                </div>
+                <ul class="dropdown-menu">
+                    <li class="has-submenu">
+                        <a href="planeacion.html">Planeación</a>
+                        <ul class="submenu">
+                            <li><a href="planeacion.html#humanos">Humanos</a></li>
+                            <li><a href="planeacion.html#financieros">Financieros</a></li>
+                            <li><a href="planeacion.html#materiales">Materiales</a></li>
+                            <li><a href="planeacion.html#tecnologicos">Tecnológicos</a></li>
+                            <li><a href="planeacion.html#informacion">Información</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="organizacion.html">Organización</a>
+                        <ul class="submenu">
+                            <li><a href="organizacion.html#humanos">Humanos</a></li>
+                            <li><a href="organizacion.html#financieros">Financieros</a></li>
+                            <li><a href="organizacion.html#materiales">Materiales</a></li>
+                            <li><a href="organizacion.html#tecnologicos">Tecnológicos</a></li>
+                            <li><a href="organizacion.html#informacion">Información</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="direccion.html">Dirección</a>
+                        <ul class="submenu">
+                            <li><a href="direccion.html#humanos">Humanos</a></li>
+                            <li><a href="direccion.html#financieros">Financieros</a></li>
+                            <li><a href="direccion.html#materiales">Materiales</a></li>
+                            <li><a href="direccion.html#tecnologicos">Tecnológicos</a></li>
+                            <li><a href="direccion.html#informacion">Información</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="control.html">Control</a>
+                        <ul class="submenu">
+                            <li><a href="control.html#humanos">Humanos</a></li>
+                            <li><a href="control.html#financieros">Financieros</a></li>
+                            <li><a href="control.html#materiales">Materiales</a></li>
+                            <li><a href="control.html#tecnologicos">Tecnológicos</a></li>
+                            <li><a href="control.html#informacion">Información</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
-            <a href="proyectos.html" class="active">Proyectos</a>
+
+            <a href="proyectos.html">Proyectos</a>
             <a href="investigacion.html">Investigación</a>
             <a href="contacto.html">Contacto</a>
         </nav>
@@ -34,17 +77,145 @@
     <br>
     <br>
     <main>
-        <section class="proyectos animate-section" data-anim="left">
-            <div class="content">
-                <div class="text">
-                    <h3>Proyectos</h3>
-                    <p>Estamos desarrollando vacunas innovadoras, sistemas de defensa biosanitaria automatizados y tecnología genética para aumentar la resistencia humana a enfermedades. Nuestros proyectos están en la frontera de la ciencia y el control biológico.</p>
-                </div>
-                <div class="image">
-                    <img src="img/Biotecnologia-vegetal.png" alt="Proyectos Umbrella">
-                </div>
-            </div>
-        </section>
+        <!-- 1. V-ACT Catalyst -->
+<!-- 1. Imagen a la derecha -->
+<section class="about animate-section" data-anim="left" id="vact">
+  <div class="content">
+    <div class="text">
+      <h3>V-ACT Catalyst</h3>
+      <p><strong>Estímulo acelerado de regeneración celular</strong> en tejidos dañados. Aplicaciones: quemaduras severas, amputaciones, neurocirugía experimental. Se presenta en jeringa crionanocapsulada para su uso inmediato.</p>
+      <br>
+      <p><b>Público objetivo:</b> hospitales de trauma, clínicas de reconstrucción, centros militares de rehabilitación.</p>
+    </div>
+    <div class="image"><img src="img/vact.jpg" alt="V-ACT Catalyst"></div>
+  </div>
+</section>
+
+<!-- 2. Imagen a la izquierda -->
+<section class="about animate-section" data-anim="right" id="tcell">
+  <div class="content">
+    <div class="image"><img src="img/tcell.jpg" alt="T-Cell Evolution Virus"></div>
+    <div class="text right">
+      <h3>T-Cell Evolution Virus</h3>
+      <p>Versión debilitada del T-Virus diseñada para inmunoterapia controlada. Incluye nanobots integrados que previenen mutaciones no deseadas en tratamientos contra cáncer y enfermedades autoinmunes.</p>
+      <br>
+      <p><b>Público objetivo:</b> institutos médicos, laboratorios farmacéuticos, centros oncológicos especializados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Imagen a la derecha -->
+<section class="about animate-section" data-anim="left" id="nealpha">
+  <div class="content">
+    <div class="text">
+      <h3>NE-Alpha (NeuroEnhancer Viral)</h3>
+      <p>Microvirus sintético que estimula sinapsis y mejora memoria a corto/largo plazo. Requiere terapia de soporte y seguimiento mensual. Actualmente en fase experimental para Alzheimer y déficit cognitivo.</p>
+      <br>
+      <p><b>Público objetivo:</b> clínicas de neurología avanzada, fundaciones de salud mental, centros cognitivos.</p>
+    </div>
+    <div class="image"><img src="img/nealpha.jpg" alt="NE-Alpha NeuroEnhancer"></div>
+  </div>
+</section>
+
+<!-- 4. Imagen a la izquierda -->
+<section class="about animate-section" data-anim="right" id="regenex">
+  <div class="content">
+    <div class="image"><img src="img/regenex.jpg" alt="ReGeneX Serum"></div>
+    <div class="text">
+      <h3>ReGeneX Serum</h3>
+      <p>Suero regenerativo viral que acelera restauración de tejidos epiteliales y musculares hasta 300% más rápido. Ideal en casos de alta demanda biológica.</p>
+      <br>
+      <p><b>Público objetivo:</b> clínicas regenerativas, atletas de rendimiento, centros de rehabilitación motriz.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Imagen a la derecha -->
+<section class="about animate-section" data-anim="left" id="umbras">
+  <div class="content">
+    <div class="text">
+      <h3>UmbraSkin+</h3>
+      <p>Suero estético derivado del Proyecto Lisa Trevor (no mutagénico). Rejuvenece piel, reduce cicatrices y revitaliza elasticidad celular con resultados visibles.</p>
+      <br>
+      <p><b>Público objetivo:</b> spas de lujo, clínicas estéticas de élite, celebridades.</p>
+    </div>
+    <div class="image"><img src="img/umbras.jpg" alt="UmbraSkin+"></div>
+  </div>
+</section>
+
+<!-- 6. Imagen a la izquierda -->
+<section class="about animate-section" data-anim="right" id="neurohelix">
+  <div class="content">
+    <div class="image"><img src="img/neurohelix.jpg" alt="NeuroHelix 7"></div>
+    <div class="text">
+      <h3>NeuroHelix 7</h3>
+      <p>Tratamiento mensual para mejorar reflejos, concentración y procesamiento mental. No adictivo ni mutagénico si se usa correctamente.</p>
+      <br>
+      <p><b>Público objetivo:</b> ejecutivos, pilotos, programadores de IA e investigadores de alto rendimiento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Imagen a la derecha -->
+<section class="about animate-section" data-anim="left" id="biohaz">
+  <div class="content">
+    <div class="text">
+      <h3>BioHaz Detekt™</h3>
+      <p>Escáner portátil que detecta más de 500 cepas virales/genéticas en aire o superficies. Ideal para bioseguridad móvil.</p>
+      <br>
+      <p><b>Público objetivo:</b> laboratorios BSL-3/-4, aeropuertos, control sanitario.</p>
+    </div>
+    <div class="image"><img src="img/biohaz.jpg" alt="BioHaz Detekt™"></div>
+  </div>
+</section>
+
+<!-- 8. Imagen a la izquierda -->
+<section class="about animate-section" data-anim="right" id="nanopurge">
+  <div class="content">
+    <div class="image"><img src="img/nanopurge.jpg" alt="NanoPurge™"></div>
+    <div class="text">
+      <h3>NanoPurge™</h3>
+      <p>Spray con nanoenzimas que descomponen restos biológicos peligrosos sin dañar superficies. Usado en descontaminación avanzada.</p>
+      <br>
+      <p><b>Público objetivo:</b> unidades de descontaminación, hospitales, bio-limpieza industrial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Imagen a la derecha -->
+<section class="about animate-section" data-anim="left" id="genlock">
+  <div class="content">
+    <div class="text">
+      <h3>GEN-LOCK Access™</h3>
+      <p>Cerraduras con lectura genética en vivo. Solo se abre si la cadena de ADN es compatible en tiempo real, garantizando máxima seguridad.</p>
+      <br>
+      <p><b>Público objetivo:</b> laboratorios nivel 4, bancos de ADN, instalaciones de alta seguridad.</p>
+    </div>
+    <div class="image"><img src="img/genlock.jpg" alt="GEN-LOCK Access™"></div>
+  </div>
+</section>
+
+<!-- 10. Imagen a la izquierda -->
+<section class="about animate-section" data-anim="right" id="zremediant">
+  <div class="content">
+    <div class="image"><img src="img/zremediant.jpg" alt="Z-Remediant Bact Cells"></div>
+    <div class="text">
+      <h3>Z-Remediant Bact Cells</h3>
+      <p>Bacterias modificadas que absorben residuos radioactivos o biotóxicos. Eficacia comprobada en limpieza industrial y zonas contaminadas.</p>
+      <br>
+      <p><b>Público objetivo:</b> industrias contaminadas, gobiernos con zonas bio-peligrosas, ONGs ambientales.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+
+
+
+
     </main>
 
     <footer>
