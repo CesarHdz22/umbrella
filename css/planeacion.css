@@ -9,16 +9,38 @@ body {
     background-color: #0d0d0d;
     color: #fff;
     line-height: 1.6;
-    
 }
 
+/* Footer */
 footer {
-  background-color: #000;
-  text-align: center;
-  padding: 1rem;
-  border-top: 2px solid #e50914;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+    background-color: #000;
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #e50914;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
+/* ------- RESPONSIVIDAD ------- */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem; /* Texto ligeramente más pequeño */
+        padding: 0 1rem; /* Margen lateral en móviles */
+    }
 
+    footer {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 0.6rem;
+    }
+}

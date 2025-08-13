@@ -2,39 +2,32 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem; /* Espaciado para móviles */
+}
+
+.content,
+.content-center {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(229, 9, 20, 0.4);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1000px; /* En lugar de width fijo */
+    width: 100%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
 }
 
 .content {
-    display: flex;
     flex-direction: row;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(229, 9, 20, 0.4);
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
-    padding: 2rem;
-    gap: 2rem;
-    width: 1000px;
-    margin: 2rem auto;
-    flex-wrap: wrap;
-    transition: transform 0.3s ease;
-
 }
+
 .content-center {
-    display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(229, 9, 20, 0.4);
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
-    padding: 2rem;
-    gap: 2rem;
-    width: 1000px;
-    margin: 2rem auto;
-    flex-wrap: wrap;
-    transition: transform 0.3s ease;
-
 }
-
 
 .content:hover {
     transform: scale(1.01);
@@ -48,9 +41,8 @@ section {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #e50914;
-    text-align: center; /* Centrado horizontal */
+    text-align: center;
 }
-
 
 .text p {
     font-size: 1.05rem;
@@ -58,25 +50,23 @@ section {
 }
 
 .about .text {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .about .text.left {
-  text-align: left;
+    text-align: left;
 }
 
 .about .text.right {
-  text-align: right;
+    text-align: right;
 }
-
 
 .text-center h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #e50914;
-    text-align: center; /* Centrado horizontal */
+    text-align: center;
 }
-
 
 .text-center p {
     font-size: 1.05rem;
@@ -95,21 +85,21 @@ section {
 }
 
 .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        font-family: 'Segoe UI', sans-serif;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
 
 .mini-card {
-        background: #bbbbbb;
-        border-left: 6px solid #e03333;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 16px 20px;
-        width: 280px;
-        transition: transform 0.3s ease;
+    background: #bbbbbb;
+    border-left: 6px solid #e03333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    width: 280px;
+    transition: transform 0.3s ease;
 }
 
 .mini-card:hover {
@@ -126,4 +116,55 @@ section {
     margin: 5px 0 0;
     color: #333;
     font-size: 0.95rem;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .content,
+    .content-center {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .text h3, .text-center h3 {
+        font-size: 1.5rem;
+    }
+
+    .text p, .text-center p {
+        font-size: 1rem;
+    }
+
+    .mini-card {
+        width: 100%;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .content,
+    .content-center {
+        padding: 1rem;
+    }
+
+    .text h3, .text-center h3 {
+        font-size: 1.2rem;
+    }
+
+    .text p, .text-center p {
+        font-size: 0.95rem;
+    }
 }

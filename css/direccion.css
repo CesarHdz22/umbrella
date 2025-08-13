@@ -24,9 +24,6 @@ main {
     gap: 3rem;
 }
 
-/* Sección general */
-
-
 /* ---------------- Footer ---------------- */
 footer {
     text-align: center;
@@ -37,7 +34,7 @@ footer {
     margin-top: 3rem;
 }
 
-/* ---------------- Animaciones (si tienes animaciones.js) ---------------- */
+/* ---------------- Animaciones ---------------- */
 .animate-section[data-anim="left"] {
     animation: slideInLeft 1s ease forwards;
     opacity: 0;
@@ -69,22 +66,76 @@ footer {
         transform: translateX(0);
     }
 }
+
+/* ---------------- Bloques de texto ---------------- */
 .text-block {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: justify;
-  background: #111;
-  border: 1px solid #c00;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  color: #eee;
-  line-height: 1.7em;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    background: #111;
+    border: 1px solid #c00;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #eee;
+    line-height: 1.7em;
 }
+
 .text-block h4 {
-  margin-top: 20px;
-  color: #ff4c4c;
+    margin-top: 20px;
+    color: #ff4c4c;
 }
 
+/* ---------------- RESPONSIVE ---------------- */
 
+/* Tablets */
+@media (max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .text-block {
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    .text-block h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Menos espacio en móvil */
+    }
+
+    main {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .text-block {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .text-block h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .text-block {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}
