@@ -121,3 +121,54 @@ footer {
         animation-duration: 0.7s;
     }
 }
+
+/* ---------- Parche responsivo: arregla .about (y secciones similares) en móvil ---------- */
+
+/* Asegura un layout flexible y que las imágenes puedan encoger */
+.content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Contenedor de la imagen: permitir que encoja y quitar offsets */
+.content .image {
+  flex: 1 1 300px;    /* permite crecer/encoger; base 300px */
+  min-width: 0;       /* importante para que flex items puedan reducirse */
+  margin: 0;          /* elimina márgenes negativos heredados si los hubiera */
+  width: 100%;
+  max-width: 360px;   /* límite razonable en desktop/tablet */
+  order: 0;
+}
+
+/* Imagen: escalar de forma proporcional y quitar posicionamientos absolutos/relativos */
+.content .image img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  display: block;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  border-radius: 10px;
+  border: 2px solid #e50914;
+}
+
+/* Texto centrado en pantallas pequeñas */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .content .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content .image {
+    max-width: 320px;
+  }
+}
